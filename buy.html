@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <title>Web-Warrior</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/bootstrap2.min.css">
+
+  <!-- Icon cdn -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <style>
+    .all {
+      padding-top: 16vh;
+    }
+
+    .plan-text {
+      margin-left: 35%;
+      margin-top: -55px;
+      text-align: center;
+      color: #00aaff;
+
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body,
+    div,
+    form,
+    input,
+    select,
+    textarea,
+    p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      line-height: 22px;
+    }
+
+    h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 38px;
+      color: #fff;
+      z-index: 2;
+    }
+
+    .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+      padding: 20px;
+    }
+
+    form {
+      width: 100%;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 0 25px 0 #00aaff;
+    }
+
+    .banner {
+      position: relative;
+      height: 210px;
+      background-image: url("/uploads/media/default/0001/01/b42dddca6e6a31b300c6ce26cb9dcac565b2f869.jpeg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .banner::after {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input {
+      width: calc(100% - 10px);
+      padding: 5px;
+    }
+
+    input[type="date"] {
+      padding: 4px 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 7px 0;
+      background: transparent;
+    }
+
+    textarea {
+      width: calc(100% - 12px);
+      padding: 5px;
+    }
+
+    .item:hover p,
+    .item:hover i,
+    .question:hover p,
+    .question label:hover,
+    input:hover::placeholder {
+      color: #00aaff;
+    }
+
+    .item input:hover,
+    .item select:hover,
+    .item textarea:hover {
+      border: 1px solid transparent;
+      box-shadow: 0 0 6px 0 #00aaff;
+      color: #00aaff;
+    }
+
+    .item {
+      position: relative;
+      margin: 10px 0;
+    }
+
+    input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    .item i,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      font-size: 20px;
+      color: #a9a9a9;
+    }
+
+    .item i {
+      right: 2%;
+      top: 30px;
+      z-index: 1;
+    }
+
+    [type="date"]::-webkit-calendar-picker-indicator {
+      right: 1%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+      display: none;
+    }
+
+    label.radio {
+      position: relative;
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      cursor: pointer;
+    }
+
+    .question span {
+      margin-left: 30px;
+    }
+
+    label.radio:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+
+    input[type=radio]:checked+label:before,
+    label.radio:hover:before {
+      border: 2px solid #00aaff;
+    }
+
+    label.radio:after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      width: 8px;
+      height: 4px;
+      border: 3px solid #00aaff;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+      opacity: 0;
+    }
+
+    input[type=radio]:checked+label:after {
+      opacity: 1;
+    }
+
+    .btn-block {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #00aaff;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #00aaff;
+    }
+
+    @media (min-width: 568px) {
+
+      .name-item,
+      .city-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .name-item input,
+      .city-item input {
+        width: calc(50% - 20px);
+      }
+
+      .city-item select {
+        width: calc(50% - 8px);
+      }
+    }
+
+    .phonepe-icon {
+      margin-top: -15px;
+      margin-left: 24px;
+      margin-right: -30px;
+    }
+
+    .gpay-icon {
+      margin-top: -15px;
+      margin-left: 24px;
+      margin-right: -30px;
+    }
+
+    .payment-option {
+      margin-top: 3px;
+      padding-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4 style="color: #00aaff; margin-top: 25px;margin-left: -30px; font-size: 30px;">
+                <i>Web-Warrior</i>
+              </h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="index.html#services">Services</a></li>
+              <li class="scroll-to-section"><a href="index.html#about">About</a></li>
+              <li class="scroll-to-section"><a href="index.html#pricing">Pricing</a></li>
+              <!-- <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li> -->
+              <li class="scroll-to-section"><a href="contact.html">Contact</a></li>
+
+              <li>
+                <div class="gradient-button"><a href="Discount.html"><i class='bx bxs-discount bx-tada bx-rotate-180'
+                      style="font-size: 17px;"></i>
+                    Discount</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="all">
+    <div class="plan-name">
+      <!-- <h1 class="plan-text">Enter all infomation</h1> -->
+    </div>
+
+    <div class="testbox">
+      <form action="/">
+        <div class="item">
+          <p>Select the Date of website
+          <p>
+            <input type="date" name="bdate" required />
+            <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Name</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" />
+            <input type="text" name="name" placeholder="Last" />
+          </div>
+        </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="email" name="email" />
+        </div>
+        <div class="item">
+          <p>Phone</p>
+          <input type="text" name="phone" placeholder="### ### ####" />
+        </div>
+        <div class="question">
+          <p>Gender</p>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="gender" />
+              <label for="radio_1" class="radio"><span>Male</span></label>
+            </div>
+            <div>
+              <input type="radio" value="none" id="radio_2" name="gender" />
+              <label for="radio_2" class="radio"><span>Female</span></label>
+            </div>
+          </div>
+          <div class="payment-div">
+            <p class="payment-option">Payment option</p>
+            <input type="radio" value="none" id="radio_3" name="payment" />
+            <label for="radio_3" class="radio"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
+                height="48" viewBox="0 0 48 48 " class="phonepe-icon">
+                <path fill="#4527a0"
+                  d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z">
+                </path>
+                <path fill="#fff"
+                  d="M32.267,20.171c0-0.681-0.584-1.264-1.264-1.264h-2.334l-5.35-6.25	c-0.486-0.584-1.264-0.778-2.043-0.584l-1.848,0.584c-0.292,0.097-0.389,0.486-0.195,0.681l5.836,5.666h-8.851	c-0.292,0-0.486,0.195-0.486,0.486v0.973c0,0.681,0.584,1.506,1.264,1.506h1.972v4.305c0,3.502,1.611,5.544,4.723,5.544	c0.973,0,1.378-0.097,2.35-0.486v3.112c0,0.875,0.681,1.556,1.556,1.556h0.786c0.292,0,0.584-0.292,0.584-0.584V21.969h2.812	c0.292,0,0.486-0.195,0.486-0.486V20.171z M26.043,28.413c-0.584,0.292-1.362,0.389-1.945,0.389c-1.556,0-2.097-0.778-2.097-2.529	v-4.305h4.043V28.413z">
+                </path>
+              </svg><span class="span-text">PhonePe</span></label>
+          </div>
+          <div>
+            <input type="radio" value="none" id="radio_4" name="payment" />
+            <label for="radio_4" class="radio"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
+                height="48" viewBox="0 0 48 48" class="gpay-icon">
+                <path fill="#cfd8dc"
+                  d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z">
+                </path>
+                <path fill="#536dfe" d="M37,6H26.463L13.154,42H37c2.762,0,5-2.238,5-5V11C42,8.238,39.762,6,37,6z">
+                </path>
+                <path fill="#fafafa"
+                  d="M24.34,23.869v3.365h-1.067v-8.31h2.831c0.683-0.014,1.343,0.245,1.833,0.719 c0.496,0.447,0.776,1.086,0.766,1.754c0.014,0.671-0.265,1.316-0.766,1.764c-0.495,0.472-1.106,0.708-1.833,0.707L24.34,23.869 L24.34,23.869z M24.34,19.947v2.901h1.79c0.397,0.012,0.78-0.144,1.056-0.43c0.561-0.545,0.573-1.442,0.028-2.003 c-0.009-0.01-0.019-0.019-0.028-0.028c-0.273-0.292-0.657-0.452-1.056-0.441L24.34,19.947L24.34,19.947z">
+                </path>
+                <path fill="#fafafa"
+                  d="M31.163,21.362c0.789,0,1.412,0.211,1.868,0.633s0.685,1,0.684,1.734v3.504h-1.021v-0.789h-0.046 c-0.442,0.65-1.03,0.975-1.764,0.975c-0.626,0-1.15-0.186-1.572-0.557c-0.41-0.345-0.642-0.857-0.633-1.392 c0-0.588,0.222-1.056,0.667-1.404c0.445-0.347,1.038-0.522,1.781-0.522c0.634,0,1.156,0.116,1.566,0.348v-0.244 c0.002-0.365-0.159-0.712-0.441-0.945c-0.282-0.255-0.65-0.394-1.03-0.389c-0.596,0-1.068,0.252-1.416,0.755l-0.94-0.592 C29.384,21.734,30.149,21.362,31.163,21.362z M29.782,25.493c-0.001,0.276,0.13,0.535,0.354,0.696 c0.236,0.186,0.529,0.284,0.829,0.278c0.45-0.001,0.882-0.18,1.201-0.499c0.354-0.333,0.53-0.723,0.53-1.172 c-0.333-0.265-0.797-0.398-1.392-0.398c-0.434,0-0.795,0.105-1.085,0.314C29.927,24.925,29.782,25.183,29.782,25.493L29.782,25.493 z">
+                </path>
+                <path fill="#fafafa"
+                  d="M39.576,21.548l-3.564,8.192H34.91l1.323-2.866l-2.344-5.325h1.16l1.694,4.084h0.023l1.648-4.084 H39.576z">
+                </path>
+                <path fill="#4285f4"
+                  d="M17.263,23.143c0-0.325-0.027-0.65-0.082-0.971h-4.502v1.839h2.578 c-0.107,0.593-0.451,1.117-0.953,1.451v1.193h1.539C16.744,25.824,17.263,24.596,17.263,23.143z">
+                </path>
+                <path fill="#34a853"
+                  d="M12.679,27.808c1.288,0,2.373-0.423,3.164-1.152l-1.539-1.193c-0.428,0.29-0.98,0.456-1.625,0.456 c-1.245,0-2.302-0.839-2.68-1.97H8.414v1.23C9.224,26.79,10.875,27.808,12.679,27.808z">
+                </path>
+                <path fill="#fbbc04"
+                  d="M9.999,23.948c-0.2-0.593-0.2-1.235,0-1.827v-1.23H8.414c-0.678,1.349-0.678,2.938,0,4.287 L9.999,23.948z">
+                </path>
+                <path fill="#ea4335"
+                  d="M12.679,20.15c0.681-0.011,1.339,0.246,1.831,0.716l0,0l1.362-1.362 c-0.864-0.811-2.009-1.257-3.194-1.243c-1.805,0-3.455,1.018-4.265,2.63l1.585,1.23C10.377,20.99,11.434,20.15,12.679,20.15z">
+                </path>
+              </svg><span class="span-text">GPay</span></label>
+          </div>
+        </div>
+        <div class="item">
+          <p></p>
+          <!-- <input type="text" name="language"/> -->
+          <select required>
+            <option value="0">Country</option>
+            <option value="1">India</option>
+            <option value="2">Germany</option>
+            <option value="3">France</option>
+            <option value="4">Armenia</option>
+            <option value="5">USA</option>
+            <option value="6">Pakistan</option>
+            <option value="7">Russia</option>
+            <option value="8">Napal</option>
+            <option value="9">Canada</option>
+            <option value="10">Japan</option>
+            <option value="11">Other</option>
+          </select>
+        </div>
+       
+        <div class="item">
+          <p>Which type of website </p>
+          <!-- <textarea rows="3"></textarea> -->
+          <select required>
+            <option value="0">Website</option>
+            <option value="1">E-Commerce Website (shopping webiste)</option>
+            <option value="2">Business Website</option>
+            <option value="3">Blog Website</option>
+            <option value="4">Event Website</option>
+            <option value="5">Personal Website</option>
+            <option value="6">Membership Website</option>
+            <option value="7">Community Website</option>
+            <option value="8">Startup Website</option>
+            <option value="9">Entertainment Website</option>
+            <option value="10">Hobby Website</option>
+            <option value="11">School Website</option>
+            <option value="12">Wedding Website</option>
+            <option value="13">Travel Website</option>
+            <option value="14">Landing page Website</option>
+            <option value="15">Kid-friendly Website</option>
+            <option value="16">Sport Website</option>
+            <option value="17">Booking Website</option>
+            <option value="18">Protfolio Website</option>
+            <option value="19">Other</option>
+          </select>
+        </div>
+      
+        <div class="item">
+          <p>Requirement for your website</p>
+          <textarea rows="3"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">View Bill</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Join our company as a Web Developer, Manager, Web Designer</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+             
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <!-- <p>Rio de Janeiro - RJ, 22795-008, Brazil</p> -->
+            <p><a href="#">+91 9451999390</a></p>
+            <p><a href="#" target="_blank">aryancoding77@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <!-- <li><a href="#">Testimonials</a></li> -->
+              <li><a href="index.html#pricing">Pricing</a></li>
+              <li><a href="Discount.html">Discount</a></li>
+            </ul>
+           
+          </div>
+        </div>
+        
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Our Company</h4>
+            <div class="logo">
+              <h4 style="color: white; margin-left: 30px; font-size: 30px;"><i>Web-Warrior</i>
+            </div>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2023 Web-Warrior Company. All Rights Reserved.
+              <!-- <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/about.js"></script>
+
+</body>
+
+</html>

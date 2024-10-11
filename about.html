@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>Web-Warrior</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/bootstrap2.min.css">
+
+    <!-- Icon cdn -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .all {
+            padding-top: 53px;
+        }
+
+        .progress {
+            height: 5px;
+
+        }
+
+        .progress {
+            display: flex;
+            /* height: 1rem; */
+            overflow: hidden;
+            font-size: .75rem;
+            background-color: #e9ecef;
+            border-radius: 10px;
+        }
+
+        .progress .progress-bar1 {
+            width: 85%;
+            transition: 3s;
+        }
+
+        .progress .progress-bar2 {
+            width: 90%;
+            transition: 3s;
+        }
+
+        .progress .progress-bar3 {
+            width: 95%;
+            transition: 3s;
+        }
+
+        .section-title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .text-secondary {
+            color: #FBA504 !important;
+            font-weight: 500 !important;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .mb-5 {
+            margin-bottom: 3rem !important;
+        }
+
+        h1,
+        h2,
+        .about-heading,
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        @media (min-width: 1200px) {
+
+            h1,
+            .h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        #u-Web-Warrior {
+            color: #FBA504;
+        }
+
+        .bg-primary {
+            background-color: #6222CC !important;
+            /* width: 85%; */
+        }
+
+        .progress-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #6222CC;
+            transition: width 0.6s ease;
+        }
+
+        .nav a {
+            font-family: sans-serif !important;
+        }
+
+        .team-item .btn {
+            color: var(--primary);
+            background: #FFFFFF;
+        }
+
+        .team-item .btn:hover {
+            color: #FFFFFF;
+            background: var(--primary);
+        }
+
+        .img-fluid-other {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .rounded-circle {
+            border-radius: 5% !important;
+        }
+
+        .team-item .btn:nth-child(1) {
+            color: white;
+            background-color: #CD201F;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+        }
+
+        .team-item .btn:nth-child(3) {
+            color: white;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+        }
+
+        .team-item .btn:nth-child(2) {
+            color: black;
+            background-color: white;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+        }
+
+        .team-item .btn i {
+            font-size: 20px;
+            padding-top: 4.5px;
+        }
+
+        .hero-img {
+            width: 60vw;
+            margin-left: 8%;
+            margin-top: 10vh;
+        }
+
+        .about-image img {
+            margin-left: 55vw;
+            margin-top: -70vh;
+        }
+
+        @media (max-width: 993px) {
+            .about-image img {
+                margin-left: 0px;
+                margin-top: 5px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h4 style="color: #00aaff; margin-top: 25px;margin-left: -30px; font-size: 30px;">
+                                <i>Web-Warrior</i>
+                            </h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="index.html#services">Services</a></li>
+                            <li class="scroll-to-section"><a href="index.html#about">About</a></li>
+                            <li class="scroll-to-section"><a href="index.html#pricing">Pricing</a></li>
+                            <!-- <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li> -->
+                            <li class="scroll-to-section"><a href="contact.html">Contact</a></li>
+                            <li>
+                                <div class="gradient-button"><a href="Discount.html"><i
+                                            class='bx bxs-discount bx-tada bx-rotate-180' style="font-size: 17px;"></i>
+                                        Discount</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="all">
+
+
+        <!-- About Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.1s">
+                        <p class="section-title text-secondary">About Web-Warrior --</p>
+                        <h1 class="mb-5 about-heading">#1 World First Website Making Company<span id="u-Web-Warrior">
+                                <i><u>Web-Warrior</u></i></span></h1>
+                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, quo eveniet! Quaerat culpa sapiente, corrupti temporibus eaque fugit aut. Modi assumenda perferendis quos culpa blanditiis nostrum necessitatibus dolore rerum quidem doloremque sapiente, enim temporibus placeat quae aspernatur, corporis amet, earum quasi omnis molestiae. Assumenda error consectetur maiores, tempora iusto corporis vero reiciendis totam ipsam eius minus repudiandae doloremque ab distinctio quo. Eaque tenetur rem quo quidem quisquam ipsa tempora! Maxime quibusdam quas aliquam corporis? Aspernatur repudiandae quas itaque quod tenetur repellendus molestias odio, harum quibusdam debitis? Debitis, recusandae nobis. Hic temporibus veritatis consequatur! Architecto at praesentium vel inventore facilis mollitia?</p>
+                        <div class="col-lg-6 about-image">
+                            <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="assets/images/about.PNG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- About end -->
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center">-- Our Team --</p>
+                    <h1 class="text-center mb-5">Our Team Members</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4 ">
+                                <img class="img-fluid-other rounded-circle mb-4 aryan-img" src="assets/images/aryan.PNG"
+                                    alt="">
+                                <h5>Aryan Singh</h5>
+                                <span>CEO & Founder, Web-developer</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1 bg-secondary"
+                                    href="https://aryan-portfolio-website.on.drv.tw/www.Aryan_Portfolio.com/"
+                                    target="_blank">Portfolio website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid-other rounded-circle mb-4" src="assets/images/raj-img.jpg" alt="">
+                                <h5>Raj Shekhar Yadav</h5>
+                                <span>Web-developer, Web-Manager</span>
+                            </div>
+                            <div class="d-flex justify-content-center p-4">
+                                <a class="btn btn-square mx-1" href="https://youtube.com/@tech_guys_official"
+                                    target="_blank"><i class='bx bxl-youtube'></i></a>
+                                <!-- <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a> -->
+                                <a class="btn btn-square mx-1" href="https://github.com/7TechGuys" target="_blank"><i
+                                        class='bx bxl-github'></i></a>
+                                <a class="btn btn-square mx-1"
+                                    href="https://www.instagram.com/i.am.raj.07/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/images/hero.png">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Team End -->
+
+    <footer id="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h4>Join our company as a Web Developer, Manager, Web Designer</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-3">
+                    <form id="search" action="#" method="GET">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <!-- <p>Rio de Janeiro - RJ, 22795-008, Brazil</p> -->
+                        <p><a href="#">+91 9451999390</a></p>
+                        <p><a href="#" target="_blank">aryancoding77@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <!-- <li><a href="#">Testimonials</a></li> -->
+                            <li><a href="index.html#pricing">Pricing</a></li>
+                            <li><a href="Discount.html">Discount</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h4>About Our Company</h4>
+                        <div class="logo">
+                            <h4 style="color: white; margin-left: 30px; font-size: 30px;"><i>Web-Warrior</i>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <p>Copyright © 2023 Web-Warrior Company. All Rights Reserved.
+                            <!-- <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/about.js"></script>
+
+</body>
+
+</html>
